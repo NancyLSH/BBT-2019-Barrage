@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index0 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 960px;
+    height: 490px;
+    z-index: 0;
+}
+.index1,.index2 {
+    position: absolute;
+    background-color: unset;
+    width: 960px;
+    height: 490px;
+    z-index: 1;
+}
+.index2{
+    z-index: 2;
+}
+.top{
+    height: 49px;
+    background-color: rgba(245, 245, 245, 0.247);
+}
+.title{
+    color: #be98c9;
+    font-family: "SimHei",黑体;
+    font-size: 19px;
+}
+.buttom{
+    height: 42px;
+    background-color: unset;
+}
+.line{
+    width: 100%;
+    position: relative;
+    margin-bottom: 2px;
+    height: 40px;
+}
