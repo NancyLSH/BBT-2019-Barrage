@@ -6,23 +6,47 @@
     <title>菜鸡小分队的弹幕任务</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <meta name="description" content="弹幕">
-    <meta name="viewport" content="width=device-width,height=device-height,
-        maximum-scale=1.0,user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/screen1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
 <body>
-    <div style="position:relative;">
-        <div class="index0" title="视频层"></div>
-        <div class="index1" title="弹幕层"></div>
-        <div class="index2" title="功能层">
-            <div class="top">
-                <input type="image" src="./picture/画板1-返回.png" class="return" style="height: 53px;float: left;">
-                <span class="title">【散人】我爱死这款甜甜的游戏了</span>
+    <div class="container">
+        <div class="background" title="视频层"></div>
+        <div class="box">
+            <div class="top" title="上功能区">
+                <input type="image" src="./picture/5-3.png" class="return" style="height: 33px;">
+                <p class="title">【散人】我爱死这款甜甜的游戏了</p>
             </div>
-            <div class="buttom">
-                <input type="image" src="./picture/画板1-进度条轴.png" class="line">
-                <input type="image" src="./picture/画板1-进度条圆.png" class="circle">
+
+            <div class="barrage" title="弹幕层"></div>
+
+            <div style="position:relative;" title="进度条">
+                <input type="image" src="./picture/5-4.png" class="line">
+                <input type="image" src="./picture/5-5.png" class="circle">
             </div>
+            <div class="buttom" title="下功能区">
+                <input type="image" src="./picture/5-6.png" class="pause">
+                <input type="image" src="./picture/5-7.png" style="width: 50px;">
+                <p class="title">0:00 / 12:12</p>
+                <input type="image" src="./picture/5-1.png" style=" width: 63px;" id="barrage_button" onclick="open_close()"> 
+                <input type="image" src="./picture/5-8.png" style="width: 30px;">
+                <input type="image" src="./picture/5-9.png" style="width:30px;">
+            </div>
+        </div>
+    </div>
+    <div class="textarea">
+        <input type="text" id="textinput" class="kuang" style="border: none;width: 220px;height: 55px;" placeholder="   发个友善的弹幕哈皮一下吧~">
+        <input type="button" class="button" style="width:55px;" onclick="input()">
+        </div>
+    <div class="intro"> 
+        <input type="image" src="./picture/5-10.png" style="height:170px;">
+        <div style="display:flex;display: -moz-box;display: -webkit-flex;flex-direction: column;">
+        <p class="head">论如何欺负zxy师兄</p>
+        <p class="introtext">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+            哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+        <input type="image" src="./picture/5-11.png" style="width:50px;height:30px;">
         </div>
     </div>
 </body>

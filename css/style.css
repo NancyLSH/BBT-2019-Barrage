@@ -3,39 +3,119 @@
     padding: 0;
 }
 
-.index0 {
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.background {
     position: absolute;
     background-color: rgb(0, 0, 0);
-    width: 960px;
-    height: 490px;
-    z-index: 0;
-}
-.index1,.index2 {
-    position: absolute;
-    background-color: unset;
-    width: 960px;
-    height: 490px;
-    z-index: 1;
-}
-.index2{
-    z-index: 2;
-}
-.top{
-    height: 49px;
-    background-color: rgba(245, 245, 245, 0.247);
-}
-.title{
-    color: #be98c9;
-    font-family: "SimHei",黑体;
-    font-size: 19px;
-}
-.buttom{
-    height: 42px;
-    background-color: unset;
-}
-.line{
     width: 100%;
+    height: 260px;      /*自适应的网页大小还未完成 */
+    z-index: -5;
+}
+.box{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: inline-flex;
+    flex-direction: column;
+}
+.top {
+    z-index: 1;
+    background-color: rgba(245, 245, 245, 0.247);
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: inline-flex;
+    align-items: center;
+    height: 10%;
+}
+.title {
+    color: #be98c9;
+    font-family: "SimHei", 黑体;
+    font-size: 15px;
+}
+
+.barrage {
+    background-color:unset;
+    height: 178px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.buttom {
+    background-color: unset;
+    z-index: 5;
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pause {
+    width: 50px;
+    z-index: 3;
     position: relative;
-    margin-bottom: 2px;
-    height: 40px;
+}
+
+.line {
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+}
+
+.circle {
+    position: absolute;
+    z-index: 4;
+    width: 12px;
+    top: -4px;
+}
+.textarea{
+    z-index: 1;
+    position: relative;
+    padding-top: 67%;
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.intro{
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    width: 90%;
+}
+.head{
+    font-size: 18px;
+    font-family: "SimHei", 黑体;
+    color: #bf92bd;
+    margin-top: 6%;
+}
+.introtext{
+    font-family: "SimHei", 黑体;
+    color: #666666;
+}
+.kuang{
+    background-image: url("../picture/画板5-弹幕框.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.button{
+    background-image: url("../picture/4-1.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border: none;
+    width: 30px;
+    height: 50px;
 }
