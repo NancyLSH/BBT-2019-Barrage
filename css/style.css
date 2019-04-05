@@ -44,10 +44,17 @@ img {
 }
 
 .barrage {
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: inline-flex;
     background-color:unset;
+    flex-wrap:wrap;
+    flex-direction: column;
     height: 178px;
-    z-index: 0;
+    z-index: 120;
     overflow: hidden;
+    color: white;
 }
 
 
@@ -118,4 +125,23 @@ img {
     border: none;
     width: 30px;
     height: 50px;
+}
+.changmessage{
+    /* transition:right linear 6s; */
+    animation:toleft 8s  linear;
+}
+ 
+@keyframes toleft{
+    0%{
+        transform:translateX(400px);
+    }
+    100%{
+        transform:translateX(-150px);
+    }
+}
+.barragetext{
+    flex-wrap:wrap;
+    background-color: unset;
+    margin-top: 10px;
+    font-size: 15px;
 }
