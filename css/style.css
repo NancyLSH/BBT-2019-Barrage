@@ -13,12 +13,16 @@ img {
 
 .background {
     position: absolute;
-    background-color: rgb(0, 0, 0);
+    background-image: url("../picture/zxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 260px;      /*自适应的网页大小还未完成 */
-    z-index: -5;
+    height: 260px;
+    /*自适应的网页大小还未完成 */
+    z-index: 3;
 }
-.box{
+
+.box {
     width: 100%;
     position: absolute;
     display: flex;
@@ -27,20 +31,31 @@ img {
     display: inline-flex;
     flex-direction: column;
 }
+
 .top {
-    z-index: 1;
+    z-index: 4;
     background-color: rgba(245, 245, 245, 0.247);
     display: flex;
     display: -moz-box;
     display: -webkit-flex;
     display: inline-flex;
     align-items: center;
-    height: 10%;
+    height: 40px;
 }
+.return{
+    border: none;
+    background-image: url("../picture/5-3.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:40px;
+    height: 65px;
+}
+
 .title {
     color: #be98c9;
     font-family: "SimHei", 黑体;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .barrage {
@@ -48,10 +63,10 @@ img {
     display: -moz-box;
     display: -webkit-flex;
     display: inline-flex;
-    background-color:unset;
-    flex-wrap:wrap;
+    background-color: unset;
+    flex-wrap: wrap;
     flex-direction: column;
-    height: 178px;
+    height: 166px;
     z-index: 120;
     overflow: hidden;
     color: white;
@@ -67,26 +82,35 @@ img {
     align-items: center;
     justify-content: space-around;
 }
+
 .pause {
+    border: none;
+    background-image: url("../picture/5-6.png");
     width: 50px;
-    z-index: 3;
-    position: relative;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    height: 70px;
 }
 
 .line {
     width: 100%;
     z-index: 3;
     position: absolute;
+    top:6px;
 }
 
 .circle {
     position: absolute;
     z-index: 4;
-    width: 12px;
-    top: -4px;
+    width: 17px;
+    top: -1px;
+    left: 8px;
 }
-.textarea{
-    z-index: 1;
+
+.textarea {
+    z-index: 2;
     position: relative;
     padding-top: 67%;
     display: flex;
@@ -95,53 +119,129 @@ img {
     align-items: center;
     justify-content: space-around;
 }
-.intro{
+#textinput::-webkit-input-placeholder {
+    font-family: "SimHei", 黑体;
+    font-size: 13px;
+    color: #be98c9;
+    font-size: 12px;
+}
+
+.intro {
     display: flex;
     display: -moz-box;
     display: -webkit-flex;
     width: 90%;
 }
-.head{
+
+.head {
     font-size: 18px;
     font-family: "SimHei", 黑体;
     color: #bf92bd;
     margin-top: 6%;
 }
-.introtext{
+
+.introtext {
     font-family: "SimHei", 黑体;
     color: #666666;
 }
-.kuang{
+
+.kuang {
     background-image: url("../picture/画板5-弹幕框.png");
     background-color: transparent;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
-.button{
+
+.button {
     background-image: url("../picture/4-1.png");
     background-color: transparent;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     border: none;
+    margin-top: 5px;
+    margin-right: 5%;
     width: 30px;
     height: 50px;
 }
-.changmessage{
+
+.changmessage {
     /* transition:right linear 6s; */
-    animation:toleft 8s  linear;
+    animation: toleft 8s linear;
 }
- 
-@keyframes toleft{
-    0%{
-        transform:translateX(400px);
+
+@keyframes toleft {
+    0% {
+        transform: translateX(400px);
     }
-    100%{
-        transform:translateX(-150px);
+
+    100% {
+        transform: translateX(-150px);
     }
 }
-.barragetext{
-    flex-wrap:wrap;
+
+.barragetext {
+    flex-wrap: wrap;
     background-color: unset;
     margin-top: 10px;
     font-size: 15px;
+}
+
+.query_kuang {
+    font-size: 17px;
+    border: none;
+    background-image: url("../picture/画板5-查询框.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 5px;
+    width: 270px;
+    height: 50px;
+}
+
+.query_button {
+    border: none;
+    background-image: url("../picture/画板5-查找.png");
+    background-color: transparent;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 13px;
+    left: 205px;
+}
+
+.com_head,
+.com_usr {
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+.query_kuang::-webkit-input-placeholder {
+    color: #be98c9;
+    font-family: "SimHei", 黑体;
+    font-size: 13px;
+}
+
+.com_part {
+    display: flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+.name {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.comm {
+    font-size: 13px;
+    width: 50%;
+}
+.time{
+    color: #bdbdbd;
+    font-family: "SimHei", 黑体;
+    font-size: 9px; 
 }

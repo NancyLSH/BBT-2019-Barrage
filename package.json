@@ -1,0 +1,30 @@
+{
+  "name": "barrage_bbt",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "keywords": [
+    "node.js",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NancyLSH/BBT-2019-Barrage.git",
+    "private": true
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodejs-websocket": "^1.7.2",
+    "socket.io": "^2.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/NancyLSH/BBT-2019-Barrage/issues"
+  },
+  "homepage": "https://github.com/NancyLSH/BBT-2019-Barrage#readme",
+  "main": "\u001b[D\u001b[screen1",
+  "devDependencies": {},
+  "author": "NancyLi"
+}

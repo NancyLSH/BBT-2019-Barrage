@@ -9,6 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/screen1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <meta name="msapplication-tap-highlight" content="no">
 </head>
 
 <body>
@@ -16,8 +19,8 @@
         <div class="background" title="视频层"></div>
         <div class="box">
             <div class="top" title="上功能区">
-                <input type="image" src="./picture/5-3.png" class="return" style="height: 33px;">
-                <p class="title">【散人】我爱死这款甜甜的游戏了</p>
+                <input type="button" class="return">
+                <p class="title">【ZXY师兄】我爱死这款奶油面膜了</p>
             </div>
 
             <div class="barrage" title="弹幕层"></div>
@@ -27,26 +30,46 @@
                 <input type="image" src="./picture/5-5.png" class="circle">
             </div>
             <div class="buttom" title="下功能区">
-                <input type="image" src="./picture/5-6.png" class="pause">
-                <input type="image" src="./picture/5-7.png" style="width: 50px;">
+                <input type="button" class="pause">
+                <input type="image" src="./picture/5-7.png" style="width: 75px;">
                 <p class="title">0:00 / 12:12</p>
-                <input type="image" src="./picture/5-1.png" style=" width: 63px;" id="barrage_button" onclick="open_close()"> 
-                <input type="image" src="./picture/5-8.png" style="width: 30px;">
-                <input type="image" src="./picture/5-9.png" style="width:30px;">
+                <input type="image" src="./picture/5-1.png" style=" width: 77px;" id="barrage_button"
+                    onclick="open_close()">
+                <input type="image" src="./picture/5-8.png" style="width: 40px;">
+                <input type="image" src="./picture/5-9.png" style="width:40px;">
             </div>
         </div>
     </div>
     <div class="textarea" id="push">
-        <input type="text" id="textinput" class="kuang" style="border: none;width: 220px;height: 55px;" placeholder="   发个友善的弹幕哈皮一下吧~">
-        <input type="button" id="button" class="button" style="width:55px;" onclick="pushtext()">
+        <input type="text" id="textinput" class="kuang" style="border: none;width: 270px;height: 60px;"
+            placeholder="    发个友善的弹幕哈皮一下吧~">
+        <input type="button" id="button" class="button" style="width:55px;" onclick="btn()">
+    </div>
+    <div class="intro">
+        <input type="image" src="./picture/5-10.png" style="height:170px;padding-left:2%">
+        <div style="display:flex;display: -moz-box;display: -webkit-flex;flex-direction: column;padding-left: 8%;">
+            <p class="head">论如何欺负zxy师兄</p>
+            <p class="introtext">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+            <input type="image" src="./picture/5-11.png" style="width:30px;height:30px;">
         </div>
-    <div class="intro"> 
-        <input type="image" src="./picture/5-10.png" style="height:170px;">
-        <div style="display:flex;display: -moz-box;display: -webkit-flex;flex-direction: column;">
-        <p class="head">论如何欺负zxy师兄</p>
-        <p class="introtext">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
-            哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-        <input type="image" src="./picture/5-11.png" style="width:50px;height:30px;">
+    </div>
+    <div class="comment">
+        <div class="com_head">
+            <input type="image" src="./picture/画板5-评论区.png" width="90px">
+            <div style="position:relative;left:15px;bottom: 27px;">
+                <input type="text" class="query_kuang" src="./picture/画板5-查询框.png" style="border: none"
+                    placeholder="    输入时间和关键词进行查找吧~">
+                <input type="button" class="query_button" src="./picture/画板5-查找.png" style="width:55px;height:55px">
+            </div>
+        </div>
+        <div class="com_usr">
+            <input type="image" class="imghead" src="./picture/画板5-头像组.png" style="width:100px;">
+            <div class="com_part" id="com_part">
+                <p class="head name">Tanwer</p>
+                <p class="introtext comm">清明节快乐！！ ！！！！！！！！！！！！！！</p>
+                <p class="time">发布日期：2019/4/6</p>
+            </div>
         </div>
     </div>
 </body>
