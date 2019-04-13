@@ -8,7 +8,6 @@
     <meta name="description" content="弹幕">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./public/screen1.js" charset="utf-8"></script>
-    <!-- <script type="text/javascript" src="./client.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="screen-orientation" content="portrait">
     <meta name="viewport" content="user-scalable=no, width=device-width">
@@ -19,36 +18,39 @@
 <body>
     <div class="container">
         <div class="background" title="视频层"></div>
+        <!--用以撑起父元素的高度-->
+
         <div class="box flex">
             <div class="top flex" title="上功能区">
-                <input type="button" class="return img_background1">
+                <button type="button" class="return img_background1"></button>
                 <p class="title">【ZXY师兄】我爱死这款奶油面膜了</p>
             </div>
 
-            <div class="barrage flex" title="弹幕层">
-            </div>
+            <div class="barrage flex" title="弹幕层"></div>
+
             <div style="position:relative;" title="进度条">
-                <input type="image" src="./public/picture/5-4.png" class="line">
-                <input type="image" src="./public/picture/5-5.png" class="circle">
+                <img src="./public/picture/5-4.png" class="line">
+                <img src="./public/picture/5-5.png" class="circle">
             </div>
+
             <div class="buttom flex" title="下功能区">
-                <input type="button" class="pause img_background1">
-                <input type="image" src="./public/picture/5-7.png" style="width: 55px;margin-left:3%;">
+                <button type="button" class="pause img_background1"></button>
+                <img src="./public/picture/5-7.png" style="width: 55px;margin-left:3%;">
                 <div class="title" id="long" style="margin-left:-5%">0:00 / 12:12</div>
-                <input type="image" src="./public/picture/5-1.png" style=" width: 76px;" id="barrage_button"
-                    onclick="open_close()">
-                <input type="image" id="choose" src="./public/picture/5-8.png" style="width: 38px;">
-                <input type="button" class="fullscreen img_background1">
+                <button type="button" class="img_background1" id="barrage_button" onclick="open_close()"></button>
+                <img id="choose" src="./public/picture/5-8.png" style="width:8%;position: relative;top: 6%;">
+                <button type="button" class="fullscreen img_background1"></button>
             </div>
         </div>
-        <div class="textarea flex" id="push">
-            <input type="text" id="textinput" name="message" class="kuang img_background1" placeholder="    发个友善的弹幕哈皮一下吧~">
-            <input type="button" id="button" class="button img_background1" style="width:55px;" onclick="btn()">
-            <!-- <button id="button" class="button img_background1" style="width:55px;"></button>          为什么会自动刷新?-->
-        </div>    
     </div>
+
+    <div class="textarea flex" id="push">
+        <div class="kuang img_background1" ><input type="text" class="input" name="message" placeholder="发个友善的弹幕哈皮一下吧~"></div>
+        <button id="button" class="button img_background1" style="width:55px;" onclick="btn()" type="button"></button>
+    </div>
+
     <div class="intro flex">
-        <input type="image" src="./public/picture/5-10.png" style="height:140px;padding-left:2%">
+        <img src="./public/picture/5-10.png" style="left: 6%;padding-left:2%;width: 38%;height: 10%;">
         <div style="display:flex;display: -moz-box;display: -webkit-flex;flex-direction: column;padding-left: 6%;">
             <p class="head">论如何欺负zxy师兄</p>
             <p class="introtext">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
@@ -56,13 +58,14 @@
             <input type="image" src="./public/picture/5-11.png" style="width:30px;height:30px;">
         </div>
     </div>
+
     <div class="comment">
         <div class="com_head flex">
-            <input type="image" src="./public/picture/5-12.png" style="width:90px;">
-            <div style="position:relative;left:15px;bottom: 27px;">
-                <input type="text" class="query_kuang img_background1" src="./public/picture/5-13.png" style="border: none"
-                    placeholder="    输入时间和关键词进行查找吧~">
-                <input type="button" class="query_button img_background2" src="./public/picture/5-14.png" style="width:55px;height:55px">
+            <img src="./public/picture/5-12.png" style="width:30%;left:3%;position: relative;">
+            <div style="position:relative;">
+                <div class="query_kuang img_background1"><input type="text" placeholder="输入时间和关键词进行查找吧~" class="input">
+                    <button type="button" class="query_button img_background2"></button>
+                </div>
             </div>
         </div>
         <div class="column flex">
@@ -84,17 +87,16 @@
         </div>
         <div class="color">
             <input type="button" class="select_box red img_background1" id="red">
-            <input type="button" class="select_box orange img_background1" id="orange" >
+            <input type="button" class="select_box orange img_background1" id="orange">
             <input type="button" class="select_box yellow img_background1" id="yellow">
-            <input type="button" class="select_box green1 img_background1" id="green1" >
+            <input type="button" class="select_box green1 img_background1" id="green1">
             <input type="button" class="select_box green2 img_background1" id="green2">
-            <input type="button" class="select_box blue1 img_background1" id="blue1" >
-            <input type="button" class="select_box blue2 img_background1" id="blue2" >
-            <input type="button" class="select_box purple img_background1" id="purple" >
-            <input type="button" class="select_box white img_background1" id="white" >
+            <input type="button" class="select_box blue1 img_background1" id="blue1">
+            <input type="button" class="select_box blue2 img_background1" id="blue2">
+            <input type="button" class="select_box purple img_background1" id="purple">
+            <input type="button" class="select_box white img_background1" id="white">
         </div>
     </div>
 </body>
 
 </html>
-

@@ -19,14 +19,10 @@ function display(e, n) {
 }
 
 $(document).ready(function () {
-    height(1, $(".background"), 0.42)
-    height(2, $(".return"), 0.25)
-    height(1, $(".return"), 0.4 * 0.23)
+    height(1, $(".background"), 0.6)
     height(1, $(".barrage"), 0.27)
-    height(1, $(".pause"), 0.30 * 0.25)
     height(1, $(".line"), 0.02)
     height(1, $(".circle"), 0.02)
-    $(".pause").css("width", document.body.clientHeight * 0.26 * 0.23)
 })
 
 window.onorientationchange = function () {
@@ -46,8 +42,6 @@ window.onorientationchange = function () {
             $("#textinput_b").css("margin-left", "0")
             $(".title").css("margin-right", "-3%")
             height(1, $(".background"), 1)
-            height(1, $(".barrage"), 0.75)
-            $(".return").css("margin-left", "-3%")
             break;
         case 0:
         case 180:
@@ -60,15 +54,13 @@ window.onorientationchange = function () {
             display($("#push"), 2)
             display($(".fullscreen"), 3)
             $(".title").css("margin-right", "12%")
-            height(1, $(".background"), 0.42)
+            height(1, $(".background"), 0.6)
             height(1, $(".barrage"), 0.27)
-            height(2, $(".return"), 0.25)
-            height(1, $(".return"), 0.4 * 0.23)
             break;
     }
 }
 
-function open_close() {
+function open_close() {                            //buxingwohaokun
     src = document.getElementById("barrage_button").getAttribute("src");
     if (src == './public/picture/5-1.png') {
         document.getElementById("barrage_button").src = './public/picture/5-2.png';
@@ -108,7 +100,7 @@ socket.onmessage = function (data){
 
 var type = 3
 
-function btn() {
+function btn(e) {
     var message = $("#textinput").val();
     if (message.length > 0) {
         var data = {
@@ -116,6 +108,7 @@ function btn() {
             "message": message,
         }
         socket.send(JSON.stringify(data))
+      //  e.preventDefault()
     } else {
         console.log("don't have message.")
     }
