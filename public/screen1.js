@@ -10,13 +10,14 @@ $.ajax({
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
         var usrname = res.data.username;
-        var usrid = res.data.userID;
+        var usrid = res.data.userID;              //ID传不出去很难受
+        
     },
     error:function(res){
         console.log(res.msg)
     }
 })
-console.log(usrid)
+
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
