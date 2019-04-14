@@ -75,7 +75,7 @@ body {
     background-repeat: no-repeat;
     background-color: transparent;
     border:none;
-    height: -webkit-fill-available;
+    height:180px;
 }
 .box{
     font-size: 18px;
