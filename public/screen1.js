@@ -7,7 +7,7 @@ $.ajax({
         withCredentials: true
     },
     crossDomain: true,
-    contentType: "application/json",
+    contentType: "application/x-www-form-urlencoded",
         success:function(res){
         usrname = res.data.username;
         usrid = res.data.userID;
