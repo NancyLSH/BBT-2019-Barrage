@@ -77,8 +77,8 @@ socket.onopen = function () {
 
 socket.onmessage = function (data) {
     console.log(data)                        //???
-    console.log(JSON.parse(data).record)
-    mesend(JSON.parse(data).record, type,m)
+    console.log(data.JSON.parse(data).record)
+    mesend(data.JSON.parse(data).record, type,m)
 }
 
 //发送弹幕模块
