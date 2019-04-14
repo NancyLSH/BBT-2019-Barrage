@@ -7,16 +7,15 @@ $.ajax({
         withCredentials: true
     },
     crossDomain: true,
-    // contentType: "application/json",
+    contentType: "application/json",
     success:function(res){
-       var usrname = res.data.username;
-       var usrid = res.data.userID;
+        usrname = res.data.username;
+        usrid = res.data.userID;
     },
     error:function(res){
         console.log(res.msg)
     }
 })
-// console.log(username);
 
 function height(t, e, n) {
     if (t == 1) {
@@ -92,8 +91,8 @@ socket.onopen = function () {
 };
 
 socket.onmessage = function (data) {
-    console.log(JSON.parse(data.data).data)
-    mesend(JSON.parse(data.data).data, type,m)
+    console.log(JSON.parse(data).record)
+    mesend(JSON.parse(data).record, type,m)
 }
 
 //发送弹幕模块
