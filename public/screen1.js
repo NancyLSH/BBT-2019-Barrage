@@ -75,8 +75,8 @@ socket.onopen = function () {
 };
 
 socket.onmessage = function (data) {
-    console.log(data.data)
-    console.log(JSON.parse(data).record)
+    console.log(data)
+    console.log(JSON.parse(data.data).record)
     mesend(JSON.parse(data).record, type,m)
 }
 
