@@ -1,3 +1,8 @@
+$.ajax({
+    url:"http://111.230.183.100/barrage/username.php",
+    type:"get",
+    data:"",
+})
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
@@ -74,7 +79,6 @@ socket.onopen = function () {
 socket.onmessage = function (data) {
     console.log(JSON.parse(data.data).data)
     mesend(JSON.parse(data.data).data, type,m)
-    // var name = data.username
     var mess = JSON.parse(data.data).data
     var time = JSON.parse(data.data).time
     // var id = data.id

@@ -17,7 +17,7 @@ $(function(){
                 $(".errmsg").css("display","block");
                 $(".errmsg").append(data.msg);
             }else{
-                window.location.href = ("http://localhost:8080/BBT-2019-Barrage/index.html");
+                window.location.href = ("http://134.175.124.192/BBT-2019-Barrage/index.html");
             }
          })
     })
@@ -32,7 +32,7 @@ $(function(){
                 $(".errmsg").css("display","block");
                 $(".errmsg").append(data.msg);
             }else{
-                window.location.href = ("http://localhost:8080/BBT-2019-Barrage/index.html")
+                window.location.href = ("http://134.175.124.192/BBT-2019-Barrage/index.html")
             }
         })
     })    
