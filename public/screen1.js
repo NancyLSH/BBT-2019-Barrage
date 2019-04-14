@@ -1,4 +1,4 @@
-var usrid;
+usrid = window.usrid;
 $.ajax({
     url:"http://111.230.183.100/barrage/username.php",
     type:"get",
