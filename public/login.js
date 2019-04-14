@@ -22,7 +22,7 @@ $(function(){
             },
             crossDomain: true,
             contentType: "application/x-www-form-urlencoded",
-        function(data){
+        success:function(data){
             if(data.errcode != 0){
                 $(".errmsg").html("");
                 $(".errmsg").css("display","block");
