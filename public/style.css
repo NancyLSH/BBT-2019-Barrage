@@ -59,6 +59,7 @@ img {
     background-image: url("./picture/5-3.png");
     width: 6%;
     height: 74%;
+    margin-left:1%;
 }
 .title {
     color: #be98c9;
@@ -140,6 +141,7 @@ img {
     font-family: "SimHei", 黑体;
     color: #bf92bd;
     margin-top: 6%;
+    margin-bottom:5%;
 }
 
 .introtext {
@@ -217,7 +219,8 @@ img {
 
 .query_kuang {
     font-size: 13px;
-    width: 177%;                                       /*这个宽度有点奇怪*/
+    margin-left: 15%;
+    width: 150%;                                       /*这个宽度有点奇怪*/
     background-image: url("./picture/5-13.png");
     height: 50px;                                      /*无法百分比again*/
 }
@@ -225,11 +228,11 @@ img {
 .query_button {
     background-image: url("./picture/5-14.png");
     position: relative;
-    height: 82%;
+    height: 57%;
     width: 29%;
     float: right;
-    bottom: 24%;
-    left: 2%;
+    bottom: 19%;
+    left: 6%;
 }
 
 .com_head,
@@ -355,14 +358,14 @@ img {
 }
 
 #barrage_button{
-    width: 11%;
-    height: 52%;
+    width: 8%;
+    height: 42%;
     margin-top: 1%;
 }
 .comment{
     width: 75%;
 }
 .input_{
-    font-size: 14px;
+    font-size: 12px;
     top:35%;
 }
