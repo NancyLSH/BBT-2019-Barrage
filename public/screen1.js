@@ -86,7 +86,7 @@ var type = 3
 var m = 9
 
 function btn(e) {
-     e.preventDefault()
+    //  e.preventDefault()
     var message = $("#textinput").val();
     if (message.length > 0) {
         socket.send(message)
