@@ -89,7 +89,7 @@ function btn(e) {
     //  e.preventDefault()
     var message = $("#textinput").val();
     if (message.length > 0) {
-        socket.send(message)
+        socket.send(JSON.stringify(message))
         console.log("send")
     } else {
         console.log("don't have message.")
