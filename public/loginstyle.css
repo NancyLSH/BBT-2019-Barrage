@@ -12,7 +12,6 @@ body {
     display: -webkit-inline-flex;
     flex-direction: column;
     width:100%;
-    margin-top:45%;
 }
 
 .header_ {
@@ -21,6 +20,7 @@ body {
     display: inline-flex;
     justify-content: center;
     margin-bottom:10%;
+    height: 57px;
 }
 
 .login,
@@ -30,14 +30,34 @@ body {
     color: #666666;
     font-weight: 700;
 }
+.login{
+    height: 54%;
+    top: 13%;
+    position: relative;
+    background-color: #66666641;
+    border-radius: 9px;
+    padding: 2%;
+    border-color: #0a090998;
+    -webkit-box-shadow: 0 0 11px rgba(44, 44, 44, 0.781);
+}
+.sign{
+    height: 54%;
+    top: 13%;
+    position: relative;
+    background-color: #66666641;
+    border-radius: 9px;
+    padding: 2%;
+    border-color: #0a090998;
+
+}
 .signin{
     padding-left: 10%;
-    padding-top:10%;
+    padding-top:8%;
 }
 .signup {
     display: none;
     padding-left: 10%;
-    padding-top:10%;
+    padding-top:8%;
 }
 .errmsg{
     position: absolute;
@@ -48,6 +68,8 @@ body {
     text-align: center;
 }
 .contain{
+    margin-left: 3%;
+    margin-right: 3%;
     background-image: url(./picture/画板3-提示框框.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -61,7 +83,7 @@ body {
     font-family: "SimHei", 黑体;
     color: #be98c9;
 }
-.button{
+.log_button{
     margin-right: 5%;
     background-image: url(./picture/画板3-登陆.png);
     background-size: 100% 100%;
@@ -69,4 +91,13 @@ body {
     height: 36px;
     float: right;
     margin-top: 12%;
+}
+.sin_box{
+    padding-bottom: 2%;
+}
+.input{
+    outline:none;
+}
+.thunder{
+    width: 20%;
 }

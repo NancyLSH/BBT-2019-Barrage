@@ -2,10 +2,14 @@
 function btn() {
     $(".signup").css("display","none");
     $(".signin").css("display","block");
+    $(".sign").css("-webkit-box-shadow","none")
+    $(".login").css("-webkit-box-shadow"," 0 0 11px rgba(44, 44, 44, 0.781)");
 }
 function btn_(){
     $(".signin").css("display","none");
     $(".signup").css("display","block");
+    $(".login").css("-webkit-box-shadow","none")
+    $(".sign").css("-webkit-box-shadow"," 0 0 11px rgba(44, 44, 44, 0.781)");
 }
 $(function(){
     $("#signin").click(function(e){
