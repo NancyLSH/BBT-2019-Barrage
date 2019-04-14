@@ -114,6 +114,7 @@ img {
     left: 5%;
     top:10%;
     font-weight: 500;
+    outline:none;
 }
 .textarea {
     z-index: 0;
@@ -151,7 +152,9 @@ img {
 .kuang {
     background-image: url("./picture/5-16.png");
     width: 78%;
-    height: 80%;                                      /* 为什么没办法用百分比? */
+    height: 80%;   
+    /* background-size: contain; */
+    background-size: 100% 100%;                                   /* 为什么没办法用百分比? */
 }
 
 .button {

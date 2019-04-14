@@ -74,7 +74,7 @@ socket.onopen = function () {
 
 socket.onmessage = function (data) {
     console.log(JSON.parse(data.data).message)
-    mesend(JSON.parse(data.data).message, type)
+    mesend(JSON.parse(data.data).message, type,m)
     // var name = data.username
     // var mess = data.message
     // var time = data.time
@@ -87,6 +87,7 @@ socket.onmessage = function (data) {
 //发送弹幕模块
 
 var type = 3
+var m = 9
 
 function btn(e) {
     // e.preventDefault()
@@ -101,18 +102,18 @@ function btn(e) {
     }
 };
 
-function btn_b(e) {
-    // e.preventDefault()
-    var message = $("#textinput_b").val();
-    if (message.length > 0) {
-        var data = {
-            "message": message,
-        }
-        socket.send(JSON.stringify(data))
-    } else {
-        console.log("don't have message.")
-    }
-}
+// function btn_b(e) {
+//     // e.preventDefault()
+//     var message = $("#textinput_b").val();
+//     if (message.length > 0) {
+//         var data = {
+//             "message": message,
+//         }
+//         socket.send(JSON.stringify(data))
+//     } else {
+//         console.log("don't have message.")
+//     }
+// }
 
 function messaction(ppp) {
     ppp.addClass("movetext");
@@ -123,11 +124,35 @@ function messstop(ppp) {
     ppp.remove();
 }
 
-function mesend(message, n) {
-    $(".barrage").append("<div class='barragetext'>" + message + "</div>");
+function mesend(message,n,m) {
+    console.log(m)
+    col = "#eeeeee";
+    switch(m){
+        case 1:col = "#e51c23";
+        break;
+        case 2:col = "#ff8c00";
+        break;
+        case 3:col = "#ffeb3b";
+        break;
+        case 4:col = "#009688";
+        break;
+        case 5:col = "#259b24";
+        break;
+        case 6:col = "#5677fc";
+        break;
+        case 7:col =  "#3f51b5";
+        break;
+        case 8:col = "#9c27b0";
+        break;
+        case 9:col = "#eeeeee";
+        break;
+        default:col = "#eeeeee";
+        break;
+    }
+    $(".barrage").append("<div style='color:" + col + ";' class = 'barragetext'>" + message + "</div>");
     $("#textinput").val("");
     $("#textinput_b").val("");
-    var ppp = $(".barragetext").last();
+    var ppp = $(".barragetext").last();               
     if (n == 3) {
         setTimeout(function () {
             messaction(ppp);
@@ -184,55 +209,55 @@ function changeindex() {
 }
 $(function () {
     $("#red").click(function () {
-        $(".barragetext").css("color", "#e51c23");
+        m=1;
         changeimg();
         color($(".red"), "./public/picture/7-7.png");
         changeindex()
     });
     $("#orange").click(function () {
-        $(".barrage").css("color", "#ff8c00");
+        m=2;
         changeimg();
         color($("#orange"), "./public/picture/7-4.png");
         changeindex()
     })
     $("#yellow").click(function () {
-        $(".barrage").css("color", "#ffeb3b");
+        m=3;
         changeimg();
         color($('#yellow'), "./public/picture/7-12.png");
         changeindex()
     })
     $("#green1").click(function () {
-        $(".barrage").css("color", "#009688");
+        m=4;
         changeimg();
         color($("#green1"), "./public/picture/7-10.png");
         changeindex()
     })
     $("#green2").click(function () {
-        $(".barrage").css("color", "#259b24");
+        m=5;
         changeimg();
         color($("#green2"), "./public/picture/7-8.png");
         changeindex()
     })
     $("#blue1").click(function () {
-        $(".barrage").css("color", "#5677fc");
+        m=6;
         changeimg();
         color($("#blue1"), "./public/picture/7-9.png");
         changeindex()
     })
     $("#blue2").click(function () {
-        $(".barrage").css("color", "#3f51b5");
+        m=7;
         changeimg();
         color($("#blue2"), "./public/picture/7-11.png");
         changeindex()
     })
     $("#purple").click(function () {
-        $(".barrage").css("color", "#9c27b0");
+        m=8
         changeimg();
         color($("#purple"), "./public/picture/7-6.png");
         changeindex()
     })
     $("#white").click(function () {
-        $(".barrage").css("color", "#eeeeee");
+        m=9;
         changeimg();
         color($("#white"), "./public/picture/7-5.png");
         changeindex()
