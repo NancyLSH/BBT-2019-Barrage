@@ -2,8 +2,8 @@
 var ws = require('./node_modules/ws').Server; 
 var cons = new Array();
 var server = new ws({
-    host: "127.0.0.1",
-    port: 8080
+    host: "134.175.124.192",
+    port: 22
 }); 
 server.on('connection', function (ws) {
     console.log('new connection founded successfully');

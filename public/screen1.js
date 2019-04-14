@@ -1,3 +1,6 @@
+
+
+
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
@@ -64,7 +67,7 @@ window.onorientationchange = function () {
 
 //websocket模块
 
-var socket = new WebSocket('ws://127.0.0.1:8080');
+var socket = new WebSocket('ws://134.175.124.192:22');
 // var wsServer = 'ws://111.230.183.100:9501';
 // var websocket = new WebSocket(wsServer);
 
