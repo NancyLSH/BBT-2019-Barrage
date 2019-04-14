@@ -32,7 +32,7 @@ body {
 }
 .login{
     height: 54%;
-    top: 13%;
+    top: 12%;
     position: relative;
     background-color: #66666641;
     border-radius: 9px;
@@ -42,7 +42,7 @@ body {
 }
 .sign{
     height: 54%;
-    top: 13%;
+    top: 12%;
     position: relative;
     background-color: #66666641;
     border-radius: 9px;
@@ -60,11 +60,10 @@ body {
     padding-top:8%;
 }
 .errmsg{
-    position: absolute;
+    position: relative;
     left:10%;
     top:30%;
     width: 80%;
-    border-radius:4px;
     text-align: center;
 }
 .contain{
@@ -76,6 +75,7 @@ body {
     background-color: transparent;
     border:none;
     height:180px;
+    width: 100%;
 }
 .box{
     font-size: 18px;
