@@ -1,4 +1,3 @@
-window.usrid;
 $.ajax({
     url:"http://111.230.183.100/barrage/username.php",
     type:"get",
@@ -10,14 +9,14 @@ $.ajax({
     crossDomain: true,
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
-        usrname = res.data.username;
-        window.usrid = res.data.userID;
+        var usrname = res.data.username;
+        var usrid = res.data.userID;
     },
     error:function(res){
         console.log(res.msg)
     }
 })
-console.log(window.usrid)
+console.log(usrid)
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
