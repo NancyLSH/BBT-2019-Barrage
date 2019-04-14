@@ -1,3 +1,4 @@
+window.usrid;
 $.ajax({
     url:"http://111.230.183.100/barrage/username.php",
     type:"get",
@@ -10,13 +11,13 @@ $.ajax({
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
         usrname = res.data.username;
-        usrid = res.data.userID;
+        window.usrid = res.data.userID;
     },
     error:function(res){
         console.log(res.msg)
     }
 })
-console.log(usrid)
+console.log(window.usrid)
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
@@ -89,7 +90,8 @@ function btn(e) {
     //  e.preventDefault()
     var message = $("#textinput").val();
     if (message.length > 0) {
-        socket.send(JSON.stringify(message))
+        var data = {"record":message,"userID":usrid}
+        socket.send(JSON.stringify(data))
         console.log("send")
     } else {
         console.log("don't have message.")
