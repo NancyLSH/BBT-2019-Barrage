@@ -7,7 +7,7 @@ $.ajax({
         withCredentials: true
     },
     crossDomain: true,
-    contentType: "application/json",
+    contentType: "text/html",
     success:function(res){
         usrname = res.data.username;
         usrid = res.data.userID;
@@ -188,9 +188,9 @@ var imgurl = ["url(./public/picture/4-5.png)", "url(./public/picture/4-7.png)",
 
 function changeimg() {
     for (var i in colorid) {
-        console.log(colorid[i]);
+        // console.log(colorid[i]);
         document.getElementById(colorid[i]).style.backgroundImage = imgurl[i];
-        console.log(imgurl[i]);
+        // console.log(imgurl[i]);
     }
 }
 
