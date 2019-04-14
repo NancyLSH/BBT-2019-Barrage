@@ -11,7 +11,6 @@ $.ajax({
         success:function(res){
         var usrname = res.data.username;
         var usrid = res.data.userID;              //ID传不出去很难受
-        
     },
     error:function(res){
         console.log(res.msg)

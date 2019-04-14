@@ -148,6 +148,7 @@ img {
     font-family: "SimHei", 黑体;
     color: #666666;
     font-size: 12px;
+    margin-bottom: 5%;
 }
 
 .kuang {
@@ -219,7 +220,7 @@ img {
 
 .query_kuang {
     font-size: 13px;
-    margin-left: 15%;
+    margin-left: 29%;
     width: 150%;                                       /*这个宽度有点奇怪*/
     background-image: url("./picture/5-13.png");
     height: 50px;                                      /*无法百分比again*/
@@ -231,7 +232,7 @@ img {
     height: 57%;
     width: 29%;
     float: right;
-    bottom: 16%;
+    bottom: 15%;
     left: 6%;
 }
 
@@ -304,14 +305,17 @@ img {
 
 .up {
     background-image: url("./picture/4-2.png");
+    margin-right: 5%;
 }
 
 .down {
     background-image: url("./picture/4-3.png");
+    margin-right: 5%;
 }
 
 .move {
     background-image: url("./picture/4-4.png");
+    margin-right: 5%;
 }
 
 .red {
