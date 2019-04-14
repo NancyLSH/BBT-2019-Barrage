@@ -10,7 +10,7 @@ $.ajax({
     crossDomain: true,
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
-            console.log(data)
+            console.log(res)
         usrid = res              //ID传不出去很难受
         $(".errmsg").val(usrid);
     },
