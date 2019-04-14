@@ -38,7 +38,7 @@ function display(e, n) {
 }
 
 $(document).ready(function () {
-    height(1, $(".background"), 0.4)
+    height(1, $(".background"), 0.33)
     height(1, $(".barrage"), 0.27)
     height(1, $(".line"), 0.02)
     height(1, $(".circle"), 0.02)
@@ -64,22 +64,6 @@ $(document).ready(function () {
     })
 
 })
-window.onorientationchange = function () {
-    switch (window.orientation) {
-        case -90:
-        case 90:
-        display($(".intro"),1)
-        display($(".comment"),1)
-
-            break;
-        case 0:
-        case 180:
-        display($(".intro"),2)
-        display($(".comment"),3)
-            break;
-    }
-}
-
 
 //websocket模块
 

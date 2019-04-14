@@ -57,10 +57,9 @@ img {
 
 .return {
     background-image: url("./picture/5-3.png");
-    width: 9%;
-    height: 80%;
+    width: 7%;
+    height: 74%;
 }
-
 .title {
     color: #be98c9;
     font-family: "SimHei", 黑体;
@@ -91,8 +90,8 @@ img {
 .pause {
     background-image: url("./picture/5-6.png");
     margin-right: -6%;
-    width: 10%;
-    height: 55%;
+    width: 7%;
+    height: 58%;
 }
 
 .line {
@@ -153,7 +152,6 @@ img {
     background-image: url("./picture/5-16.png");
     width: 78%;
     height: 80%;   
-    /* background-size: contain; */
     background-size: 100% 100%;                                   /* 为什么没办法用百分比? */
 }
 
@@ -270,6 +268,7 @@ img {
     background-image: url("./picture/5-9.png");
     width: 10%;
     height: 76%;
+    margin-top: 0.5%;
 }
 
 .kuang_b {
@@ -350,8 +349,9 @@ img {
 }
 
 #barrage_button{
-    width: 14%;
-    height: 60%;
+    width: 11%;
+    height: 52%;
+    margin-top: 1%;
 }
 .comment{
     width: 75%;
