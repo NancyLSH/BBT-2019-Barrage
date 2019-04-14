@@ -12,17 +12,6 @@ $.ajax({
         success:function(res){
         usrid = res.data.userID;              //ID传不出去很难受
         console.log(usrid)
-        function btn(e) {
-            //  e.preventDefault()
-            var message = $("#textinput").val();
-            if (message.length > 0) {
-                var data = {"record":message,"userID":usrid}
-                socket.send(JSON.stringify(data))
-                console.log("send")
-            } else {
-                console.log("don't have message.")
-            }
-        };        
     },
     error:function(res){
         console.log(res.msg)
@@ -98,17 +87,17 @@ socket.onmessage = function (data) {
 var type = 3
 var m = 9
 
-// function btn(e) {
-//     //  e.preventDefault()
-//     var message = $("#textinput").val();
-//     if (message.length > 0) {
-//         var data = {"record":message,"userID":usrid}
-//         socket.send(JSON.stringify(data))
-//         console.log("send")
-//     } else {
-//         console.log("don't have message.")
-//     }
-// };
+function btn(e) {
+    //  e.preventDefault()
+    var message = $("#textinput").val();
+    if (message.length > 0) {
+        var data = {"record":message,"userID":usrid}
+        socket.send(JSON.stringify(data))
+        console.log("send")
+    } else {
+        console.log("don't have message.")
+    }
+};
 
 function messaction(ppp) {
     ppp.addClass("movetext");
