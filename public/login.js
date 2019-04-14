@@ -1,3 +1,23 @@
+$.ajax({
+    url:"http://111.230.183.100/barrage/username.php",
+    type:"get",
+    data:"",
+    dataType:"json",
+    xhrFields: {
+        withCredentials: true
+    },
+    crossDomain: true,
+    contentType: "application/x-www-form-urlencoded",
+        success:function(res){
+        usrname = res.data.username;
+        usrid = res.data.userID;
+    },
+    error:function(res){
+        console.log(res.msg)
+    }
+})
+
+
 function btn() {
     $(".signup").css("display","none");
     $(".signin").css("display","block");
