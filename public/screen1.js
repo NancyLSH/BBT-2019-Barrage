@@ -7,7 +7,7 @@ $.ajax({
         withCredentials: true
     },
     crossDomain: true,
-    contentType: "application/json",
+    //contentType: "application/json",
     function(data){
         if(data.errcode != 0){
             console.log(data.msg)
