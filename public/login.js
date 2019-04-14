@@ -1,4 +1,5 @@
-
+var width = window.innerWidth;
+var height = window.innerHeight;
 function btn() {
     $(".signup").css("display","none");
     $(".signin").css("display","block");
@@ -12,6 +13,8 @@ function btn_(){
     $(".sign").css("-webkit-box-shadow"," 0 0 11px rgba(44, 44, 44, 0.781)");
 }
 $(function(){
+    $(".contain").css("width",width)
+    $(".contain").css("height",height*0.33)
     $("#signin").click(function(e){
         e.preventDefault()
         var name = $("#name").val();
