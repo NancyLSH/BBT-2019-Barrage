@@ -11,14 +11,14 @@ $.ajax({
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
         usrid = res.data.userID;              //ID传不出去很难受
-        console.log(usrid)
+        $(".errmsg").val(usrid);
     },
     error:function(res){
         console.log(res.msg)
     }
 })
+usrid = $(".errmsg").val();
 console.log(usrid)
-
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
