@@ -1,16 +1,26 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border:none;
+}
+
 body {
     display: flex;
     display: -webkit-flex;
     display: -webkit-inline-flex;
-    align-items: center;
+    flex-direction: column;
+    width:100%;
+    margin-top:45%;
 }
 
-.header {
+.header_ {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom:10%;
 }
 
 .login,
@@ -19,12 +29,15 @@ body {
     font-family: "SimHei", 黑体;
     color: #666666;
     font-weight: 700;
-    margin-right: 10%;
-    margin-top: 5%;
 }
-
+.signin{
+    padding-left: 10%;
+    padding-top:10%;
+}
 .signup {
     display: none;
+    padding-left: 10%;
+    padding-top:10%;
 }
 .errmsg{
     position: absolute;
@@ -33,4 +46,27 @@ body {
     width: 80%;
     border-radius:4px;
     text-align: center;
+}
+.contain{
+    background-image: url(./picture/画板3-提示框框.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border:none;
+    height: -webkit-fill-available;
+}
+.box{
+    font-size: 18px;
+    padding-bottom: 5%;
+    font-family: "SimHei", 黑体;
+    color: #be98c9;
+}
+.button{
+    margin-right: 5%;
+    background-image: url(./picture/画板3-登陆.png);
+    background-size: 100% 100%;
+    width: 26%;
+    height: 36px;
+    float: right;
+    margin-top: 12%;
 }
