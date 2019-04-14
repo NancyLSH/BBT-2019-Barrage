@@ -270,7 +270,7 @@ img {
 .fullscreen {
     background-image: url("./picture/5-9.png");
     width: 7%;
-    height: 73%;
+    height: 70%;
     margin-top: 0.5%;
 }
 
@@ -288,6 +288,7 @@ img {
 }
 .location{
     z-index: 3;
+    padding-top:10%;
 }
 .color{
     display: flex;
