@@ -16,7 +16,7 @@ $.ajax({
         console.log(res.msg)
     }
 })
-
+console.log(usrid)
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
