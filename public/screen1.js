@@ -1,6 +1,3 @@
-
-
-
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
@@ -67,20 +64,19 @@ window.onorientationchange = function () {
 
 //websocket模块
 
-var socket = new WebSocket('ws://134.175.124.192:22');
-// var wsServer = 'ws://111.230.183.100:9501';
-// var websocket = new WebSocket(wsServer);
+var wsServer = 'ws://111.230.183.100:9501';
+var socket = new WebSocket(wsServer);
 
 socket.onopen = function () {
     console.log("WebSocket is open now.");
 };
 
 socket.onmessage = function (data) {
-    console.log(JSON.parse(data.data).message)
-    mesend(JSON.parse(data.data).message, type,m)
+    console.log(JSON.parse(data.data).data)
+    mesend(JSON.parse(data.data).data, type,m)
     // var name = data.username
-    // var mess = data.message
-    // var time = data.time
+    var mess = JSON.parse(data.data).data
+    var time = JSON.parse(data.data).time
     // var id = data.id
     // $(".contain").append("<div id='com_usr" + data.id + "' class='com_usr'>" + "<input type='image' class='imghead' src='./public/picture/5-15.png' style='width:100px;'></div>")
     // $("#com_sur" + id).append("<div id='com_part" + data.id + "' class='com_part'>" + "<p class='head name'>" + data.name + "</p>" + "<p class='introtext comm'>" + data.message + "</p>" +
@@ -96,27 +92,11 @@ function btn(e) {
     // e.preventDefault()
     var message = $("#textinput").val();
     if (message.length > 0) {
-        var data = {
-            "message": message,
-        }
-        socket.send(JSON.stringify(data))
+        socket.send(message)
     } else {
         console.log("don't have message.")
     }
 };
-
-// function btn_b(e) {
-//     // e.preventDefault()
-//     var message = $("#textinput_b").val();
-//     if (message.length > 0) {
-//         var data = {
-//             "message": message,
-//         }
-//         socket.send(JSON.stringify(data))
-//     } else {
-//         console.log("don't have message.")
-//     }
-// }
 
 function messaction(ppp) {
     ppp.addClass("movetext");
