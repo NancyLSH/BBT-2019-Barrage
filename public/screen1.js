@@ -11,7 +11,7 @@ $.ajax({
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
             console.log(res)
-        usrid = res              //ID传不出去很难受
+        usrid = res.data.userID              //ID传不出去很难受
         $(".errmsg").val(usrid);
     },
     error:function(res){
