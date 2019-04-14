@@ -305,17 +305,16 @@ img {
 
 .up {
     background-image: url("./picture/4-2.png");
-    margin-right: 5%;
+    margin-right: 4.7%;
 }
 
 .down {
     background-image: url("./picture/4-3.png");
-    margin-right: 5%;
+    margin-right: 4.7%;
 }
 
 .move {
     background-image: url("./picture/4-4.png");
-    margin-right: 5%;
 }
 
 .red {
