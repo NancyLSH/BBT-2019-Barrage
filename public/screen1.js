@@ -2,7 +2,21 @@ $.ajax({
     url:"http://111.230.183.100/barrage/username.php",
     type:"get",
     data:"",
+    dataType:"json",
+    xhrFields: {
+        withCredentials: true
+    },
+    crossDomain: true,
+    contentType: "application/json",
+    function(data){
+        if(data.errcode != 0){
+            console.log(data.msg)
+        }else{
+            console.log(data.data.username);
+        }
+    }
 })
+
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
