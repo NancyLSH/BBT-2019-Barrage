@@ -10,7 +10,7 @@ $.ajax({
     crossDomain: true,
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
-        usrid = JSON.parse(res.data).userID;              //ID传不出去很难受
+        usrid = JSON.parse(res).data.userID;              //ID传不出去很难受
         $(".errmsg").val(usrid);
     },
     error:function(res){
