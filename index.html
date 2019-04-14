@@ -37,7 +37,8 @@
                 <button type="button" class="pause img_background1"></button>
                 <img src="./public/picture/5-7.png" style="width: 55px;margin-left:3%;">
                 <div class="title" id="long" style="margin-left:-5%">0:00 / 12:12</div>
-                <button type="button" class="img_background1" id="barrage_button" onclick="open_close()"></button>
+                <img class="img_background1" id="barrage_button" src="./public/picture/5-1.png">
+                <!-- <button type="button" class="img_background1" id="barrage_button"></button> -->
                 <img id="choose" src="./public/picture/5-8.png" style="width:8%;position: relative;top: 6%;">
                 <button type="button" class="fullscreen img_background1"></button>
             </div>
@@ -45,7 +46,8 @@
     </div>
 
     <div class="textarea flex" id="push">
-        <div class="kuang img_background1" ><input type="text" class="input" name="message" placeholder="发个友善的弹幕哈皮一下吧~"></div>
+        <div class="kuang img_background1"><input type="text" id="textinput" class="input" name="message" placeholder="发个友善的弹幕哈皮一下吧~">
+        </div>
         <button id="button" class="button img_background1" style="width:55px;" onclick="btn()" type="button"></button>
     </div>
 
@@ -55,22 +57,22 @@
             <p class="head">论如何欺负zxy师兄</p>
             <p class="introtext">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
                 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-            <input type="image" src="./public/picture/5-11.png" style="width:30px;height:30px;">
+                <img src="./public/picture/5-11.png" style="width:20%;height:20%;">
         </div>
     </div>
 
     <div class="comment">
         <div class="com_head flex">
-            <img src="./public/picture/5-12.png" style="width:30%;left:3%;position: relative;">
-            <div style="position:relative;">
-                <div class="query_kuang img_background1"><input type="text" placeholder="输入时间和关键词进行查找吧~" class="input">
+            <img src="./public/picture/5-12.png" style="height:12%;width:24%;left:2%;position: relative;">
+            <div style="position:relative;width: 60%;">
+                <div class="query_kuang img_background1"><input type="text" placeholder="输入时间和关键词进行查找吧~" class="input input_">
                     <button type="button" class="query_button img_background2"></button>
                 </div>
             </div>
         </div>
         <div class="column flex">
             <div class="com_usr flex" id="com_usr">
-                <input type="image" class="imghead" src="./public/picture/5-15.png" style="width:100px;">
+                <img src="./public/picture/5-15.png" class="imghead" style="width:35%">
                 <div class="column flex" id="com_part">
                     <p class="head name">Tanwer</p>
                     <p class="introtext comm">清明节快乐！！ ！！！！！！！！！！！！！！</p>
@@ -81,20 +83,20 @@
     </div>
     <div class="select">
         <div class="location">
-            <input type="button" class="select_box up img_background1" id="up">
-            <input type="button" class="select_box down img_background1" id="down">
-            <input type="button" class="select_box move img_background1" id="move">
+            <button type="button" class="select_box up img_background1" id="up"></button>
+            <button type="button" class="select_box down img_background1" id="down"></button>
+            <button type="button" class="select_box move img_background1" id="move"></button>
         </div>
         <div class="color">
-            <input type="button" class="select_box red img_background1" id="red">
-            <input type="button" class="select_box orange img_background1" id="orange">
-            <input type="button" class="select_box yellow img_background1" id="yellow">
-            <input type="button" class="select_box green1 img_background1" id="green1">
-            <input type="button" class="select_box green2 img_background1" id="green2">
-            <input type="button" class="select_box blue1 img_background1" id="blue1">
-            <input type="button" class="select_box blue2 img_background1" id="blue2">
-            <input type="button" class="select_box purple img_background1" id="purple">
-            <input type="button" class="select_box white img_background1" id="white">
+            <button type="button" class="select_box red img_background1" id="red"></button>
+            <button type="button" class="select_box orange img_background1" id="orange"></button>
+            <button type="button" class="select_box yellow img_background1" id="yellow"></button>
+            <button type="button" class="select_box green1 img_background1" id="green1"></button>
+            <button type="button" class="select_box green2 img_background1" id="green2"></button>
+            <button type="button" class="select_box blue1 img_background1" id="blue1"></button>
+            <button type="button" class="select_box blue2 img_background1" id="blue2"></button>
+            <button type="button" class="select_box purple img_background1" id="purple"></button>
+            <button type="button" class="select_box white img_background1" id="white"></button>
         </div>
     </div>
 </body>

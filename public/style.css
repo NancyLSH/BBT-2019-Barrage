@@ -76,6 +76,7 @@ img {
     overflow: hidden;
     color: #eeeeee;
     font-size: 13px;
+    font-weight: 800;
 }
 
 
@@ -91,7 +92,7 @@ img {
     background-image: url("./picture/5-6.png");
     margin-right: -6%;
     width: 8%;
-    height: 59%;
+    height: 60%;
 }
 
 .line {
@@ -106,18 +107,21 @@ img {
 
 .input{
     position: relative;
-    left: 5%;
-    top: 38%;
     background-color: transparent;
     border: none;
     width: 87%;
+    font-size: 17px;
+    left: 5%;
+    top:10%;
+    font-weight: 500;
 }
 .textarea {
     z-index: 0;
     position: relative;
+    height: 40px;                                    /* 我只好在父元素里加固定高度 但我觉得这样不太对*/
+    margin-top: 3%;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
 }
 
 #textinput::-webkit-input-placeholder {
@@ -132,6 +136,7 @@ img {
 
 .head {
     font-size: 16px;
+    font-weight: 600;
     font-family: "SimHei", 黑体;
     color: #bf92bd;
     margin-top: 6%;
@@ -145,17 +150,14 @@ img {
 
 .kuang {
     background-image: url("./picture/5-16.png");
-    margin-left: 5%;
-    width: 70%;
-    height: 60px;                      /* 为什么没办法用百分比? */
+    width: 78%;
+    height: 80%;                                      /* 为什么没办法用百分比? */
 }
 
 .button {
     background-image: url("./picture/4-1.png");
-    margin-top: 2%;
-    margin-right: 5%;
-    width: 30px;
-    height: 50px;                          /*无法百分比again*/
+    margin-right: 3%;
+    height: 80%;                                       /* 无法百分比again 然后我设置了父元素的高度 就可以百分比了*/
 }
 
 
@@ -214,9 +216,9 @@ img {
 
 .query_kuang {
     font-size: 13px;
-    width: 177%;
+    width: 177%;                                       /*这个宽度有点奇怪*/
     background-image: url("./picture/5-13.png");
-    height: 50px;                                  /*无法百分比again*/
+    height: 50px;                                      /*无法百分比again*/
 }
 
 .query_button {
@@ -226,11 +228,13 @@ img {
     width: 29%;
     float: right;
     bottom: 24%;
+    left: 2%;
 }
 
 .com_head,
 .com_usr {
     align-items: center;
+    width: 100%;
 }
 
 .query_kuang::-webkit-input-placeholder {
@@ -276,7 +280,6 @@ img {
     background-color: #66666681;
     z-index: 233;
     display: none;
-    /* visibility: hidden; */
 }
 
 .select_box {
@@ -342,10 +345,13 @@ img {
 }
 
 #barrage_button{
-    background-image: url(../public/picture/5-1.png);
     width: 14%;
-    height: 53%;
+    height: 60%;
 }
 .comment{
     width: 75%;
+}
+.input_{
+    font-size: 14px;
+    top:35%;
 }

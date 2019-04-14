@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    align-items: center;
+}
+
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+.login,
+.sign {
+    font-size: 30px;
+    font-family: "SimHei", 黑体;
+    color: #666666;
+    font-weight: 700;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.signup {
+    display: none;
+}
+.errmsg{
+    position: absolute;
+    left:10%;
+    top:30%;
+    width: 80%;
+    border-radius:4px;
+    text-align: center;
+}
