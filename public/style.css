@@ -90,8 +90,9 @@ img {
 .pause {
     background-image: url("./picture/5-6.png");
     margin-right: -6%;
-    width: 7%;
+    width: 4%;
     height: 58%;
+    margin-top:100%;
 }
 
 .line {
