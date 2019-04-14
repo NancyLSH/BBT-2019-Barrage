@@ -62,13 +62,10 @@ body {
 .errmsg{
     position: relative;
     left:10%;
-    top:30%;
     width: 80%;
     text-align: center;
 }
 .contain{
-    margin-left: 3%;
-    margin-right: 3%;
     background-image: url(./picture/画板3-提示框框.png);
     background-size: contain;
     background-repeat: no-repeat;
