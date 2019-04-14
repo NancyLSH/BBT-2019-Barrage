@@ -1,4 +1,4 @@
-var usrid = window.usrid;
+var usrid;
 $.ajax({
     url:"http://111.230.183.100/barrage/username.php",
     type:"get",
@@ -10,8 +10,7 @@ $.ajax({
     crossDomain: true,
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
-        var usrname = res.data.username;
-        var usrid = res.data.userID;              //ID传不出去很难受
+        usrid = res.data.userID;              //ID传不出去很难受
         console.log(usrid)
     },
     error:function(res){
