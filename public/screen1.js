@@ -37,6 +37,12 @@ $(document).ready(function () {
             onOff = true;	
         }
     })
+    $("#choose").click(function(){
+        display($(".select"),3)
+        var bkh = $(".background").css("height")
+        $(".select").css("height",bkh)
+        $(".container").css("z-index", "-3")
+    })
 
 })
 window.onorientationchange = function () {
@@ -78,14 +84,12 @@ socket.onmessage = function (data) {
     //     "<p class='time'>" + data.time + "</p></div>")
 }
 
-
-
 //发送弹幕模块
 
 var type = 3
 
 function btn(e) {
-    e.preventDefault()
+    // e.preventDefault()
     var message = $("#textinput").val();
     if (message.length > 0) {
         var data = {
@@ -98,7 +102,7 @@ function btn(e) {
 };
 
 function btn_b(e) {
-    e.preventDefault()
+    // e.preventDefault()
     var message = $("#textinput_b").val();
     if (message.length > 0) {
         var data = {
@@ -120,12 +124,9 @@ function messstop(ppp) {
 }
 
 function mesend(message, n) {
-    console.log("hhh")
-    //$(".barrage").append("<div class='barragetext' id='" + id + "'>" + message + "</div>");
     $(".barrage").append("<div class='barragetext'>" + message + "</div>");
     $("#textinput").val("");
     $("#textinput_b").val("");
-    // var ppp = $("'#" + id +"'").last();
     var ppp = $(".barragetext").last();
     if (n == 3) {
         setTimeout(function () {
@@ -157,8 +158,6 @@ function mesend(message, n) {
 
 
 //改变颜色和位置
-
-
 var colorid = ["red", "yellow", "orange", "green1", "green2", "blue1", "blue2", "purple", "white"];
 var imgurl = ["url(./public/picture/4-5.png)", "url(./public/picture/4-7.png)",
     "url(./public/picture/4-6.png)", "url(./public/picture/4-8.png)",
@@ -180,17 +179,12 @@ function color(e, u) {
 }
 
 function changeindex() {
-    $(".select").css("visibility", "hidden")
+    $(".select").css("display","none")
     $(".container").css("z-index", "0")
 }
 $(function () {
-    $("#choose").click(function () {
-        $(".select").css("visibility", "visible")
-        $(".container").css("z-index", "-3")
-    });
-
     $("#red").click(function () {
-        $(".barrage").css("color", "#e51c23");
+        $(".barragetext").css("color", "#e51c23");
         changeimg();
         color($(".red"), "./public/picture/7-7.png");
         changeindex()

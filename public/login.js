@@ -11,13 +11,13 @@ $(function(){
         e.preventDefault()
         var name = $("#name").val();
         var pwd = $("#password").val();
-        $.post("http://111.230.183.100/barrage/register.php",{"username":name,"password":pwd},function (data) { 
+        $.post("http://111.230.183.100/barrage/login.php",{"username":name,"password":pwd},function (data) { 
             if(data.errcode != 0){
                 $(".errmsg").html("");
                 $(".errmsg").css("display","block");
                 $(".errmsg").append(data.msg);
             }else{
-                window.location("http://localhost:8080/BBT-2019-Barrage/index.html");
+                window.location.href = ("http://localhost:8080/BBT-2019-Barrage/index.html");
             }
          })
     })
@@ -32,7 +32,7 @@ $(function(){
                 $(".errmsg").css("display","block");
                 $(".errmsg").append(data.msg);
             }else{
-                window.location("http://localhost:8080/BBT-2019-Barrage/index.html")
+                window.location.href = ("http://localhost:8080/BBT-2019-Barrage/index.html")
             }
         })
     })    

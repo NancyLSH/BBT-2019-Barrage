@@ -274,18 +274,20 @@ img {
 }
 
 .select {
-    padding-top: 60px;
-    padding-left: 60px;
-    height: 330px;
+    top:0;
+    position: absolute;
     background-color: #66666681;
-    z-index: 233;
+    z-index: 2;
     display: none;
+}
+.location{
+    z-index: 3;
 }
 
 .select_box {
     width: 50px;
     height: 50px;
-    z-index: 233;
+    z-index: 3;
 }
 
 .up {
