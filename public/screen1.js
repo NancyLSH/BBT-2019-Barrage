@@ -7,15 +7,16 @@ $.ajax({
         withCredentials: true
     },
     crossDomain: true,
-    //contentType: "application/json",
-    function(data){
-        if(data.errcode != 0){
-            console.log(data.msg)
-        }else{
-            console.log(data.data.username);
-        }
+    contentType: "application/json",
+    success:function(res){
+       var usrname = res.data.username;
+       var usrid = res.data.userID;
+    },
+    error:function(res){
+        console.log(res.msg)
     }
 })
+// console.log(username);
 
 function height(t, e, n) {
     if (t == 1) {
@@ -93,12 +94,6 @@ socket.onopen = function () {
 socket.onmessage = function (data) {
     console.log(JSON.parse(data.data).data)
     mesend(JSON.parse(data.data).data, type,m)
-    var mess = JSON.parse(data.data).data
-    var time = JSON.parse(data.data).time
-    // var id = data.id
-    // $(".contain").append("<div id='com_usr" + data.id + "' class='com_usr'>" + "<input type='image' class='imghead' src='./public/picture/5-15.png' style='width:100px;'></div>")
-    // $("#com_sur" + id).append("<div id='com_part" + data.id + "' class='com_part'>" + "<p class='head name'>" + data.name + "</p>" + "<p class='introtext comm'>" + data.message + "</p>" +
-    //     "<p class='time'>" + data.time + "</p></div>")
 }
 
 //发送弹幕模块
