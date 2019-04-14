@@ -13,7 +13,7 @@ function btn_(){
     $(".sign").css("-webkit-box-shadow"," 0 0 11px rgba(44, 44, 44, 0.781)");
 }
 $(function(){
-    $(".contain").css("height",height*0.33)
+    $(".contain").css("height",height*0.2)
     $("#signin").click(function(e){
         e.preventDefault()
         var name = $("#name").val();
