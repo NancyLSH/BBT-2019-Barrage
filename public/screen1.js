@@ -1,4 +1,4 @@
-usrid = window.usrid;
+var usrid = window.usrid;
 $.ajax({
     url:"http://111.230.183.100/barrage/username.php",
     type:"get",
@@ -78,7 +78,7 @@ socket.onopen = function () {
 };
 
 socket.onmessage = function (data) {
-    console.log(data)                        //???
+    console.log(data)                        
     console.log(JSON.parse(data.data).data)
     mesend(JSON.parse(data.data).data, type,m)
 }
