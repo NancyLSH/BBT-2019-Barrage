@@ -290,11 +290,12 @@ img {
 .location{
     z-index: 3;
     padding-top:10%;
+    display: flex;
+    align-content: flex-start;
 }
 .color{
     display: flex;
-    align-items: baseline;
-    justify-content:space-between;
+    align-items: flex-start;
 }
 
 .select_box {
@@ -305,12 +306,10 @@ img {
 
 .up {
     background-image: url("./picture/4-2.png");
-    margin-right: 3.5%;
 }
 
 .down {
     background-image: url("./picture/4-3.png");
-    margin-right: 3.5%;
 }
 
 .move {
