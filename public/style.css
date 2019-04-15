@@ -115,6 +115,7 @@ img {
     top:10%;
     font-weight: 500;
     outline:none;
+    color:#be98c9;
 }
 .textarea {
     z-index: 0;
@@ -234,7 +235,7 @@ img {
     height: 64%;
     width: 18%;
     float: right;
-    bottom: 17%;
+    bottom: 14%;
     right: 4%;
 }
 
@@ -375,6 +376,7 @@ img {
 .input_{
     font-size: 12px;
     top:28%;
+    color:#be98c9;
 }
 .com_usr{
     width:80%;
