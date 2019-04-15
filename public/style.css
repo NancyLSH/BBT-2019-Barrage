@@ -220,6 +220,7 @@ img {
 
 .query_kuang {
     font-size: 13px;
+    right:4%;
     margin-left: 29%;
     width: 150%;                                       /*这个宽度有点奇怪*/
     background-image: url("./picture/5-13.png");
@@ -230,10 +231,10 @@ img {
     background-image: url("./picture/5-14.png");
     background-image: url(./picture/5-14.png);
     position: relative;
-    height: 57%;
-    width: 17%;
+    height: 64%;
+    width: 18%;
     float: right;
-    bottom: 15%;
+    bottom: 20%;
     right: 4%;
 }
 
@@ -300,8 +301,8 @@ img {
 }
 
 .select_box {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     z-index: 3;
 }
 
@@ -371,5 +372,8 @@ img {
 }
 .input_{
     font-size: 12px;
-    top:35%;
+    top:28%;
+}
+.com_usr{
+    width:80%;
 }
