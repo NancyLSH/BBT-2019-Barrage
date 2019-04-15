@@ -10,19 +10,12 @@ $.ajax({
     crossDomain: true,
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
-            console.log(res)
-            console.log(JSON.parse(res))
-            console.log(JSON.parse(res).data)
-            console.log(JSON.parse(res).data.userID)
-        usrid = JSON.parse(res).data.userID              //ID传不出去很难受
-        $(".errmsg").val(usrid);
+        usrid = res.data.userID              //ID传不出去很难受
     },
     error:function(res){
         console.log(res.msg)
     }
 })
-usrid = $(".errmsg").val();
-console.log(usrid)
 function height(t, e, n) {
     if (t == 1) {
         e.css("height", window.innerHeight * n)
