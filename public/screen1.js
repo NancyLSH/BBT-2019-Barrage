@@ -11,6 +11,9 @@ $.ajax({
     contentType: "application/x-www-form-urlencoded",
         success:function(res){
             console.log(res)
+            console.log(JSON.parse(res))
+            console.log(JSON.parse(res).data)
+            console.log(JSON.parse(res).data.userID)
         usrid = JSON.parse(res).data.userID              //ID传不出去很难受
         $(".errmsg").val(usrid);
     },
