@@ -228,12 +228,13 @@ img {
 
 .query_button {
     background-image: url("./picture/5-14.png");
+    background-image: url(./picture/5-14.png);
     position: relative;
     height: 57%;
-    width: 29%;
+    width: 17%;
     float: right;
     bottom: 15%;
-    left: 6%;
+    right: 4%;
 }
 
 .com_head,
