@@ -234,7 +234,7 @@ img {
     height: 64%;
     width: 18%;
     float: right;
-    bottom: 20%;
+    bottom: 17%;
     right: 4%;
 }
 
@@ -291,7 +291,7 @@ img {
 }
 .location{
     z-index: 3;
-    padding-top:10%;
+    padding-top:15%;
     display: flex;
     align-content: flex-start;
     padding-left: 5%;
