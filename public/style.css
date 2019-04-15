@@ -112,10 +112,11 @@ img {
     width: 87%;
     font-size: 17px;
     left: 5%;
-    top:10%;
+    top:15%;
     font-weight: 500;
     outline:none;
     color:#be98c9;
+    font-weight: 600;
 }
 .textarea {
     z-index: 0;
@@ -377,6 +378,7 @@ img {
     font-size: 12px;
     top:28%;
     color:#be98c9;
+    font-weight: 600;
 }
 .com_usr{
     width:80%;
